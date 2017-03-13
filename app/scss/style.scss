@@ -1,6 +1,46 @@
-*{
-	margin:0 ;
-	padding: 0;
-	font-family: arial;
-}
+@import 'def';
+@import 'media';
+.headerWrapper
+{
+	background-image: url('../img/menu1.png');
+	background-repeat: repeat-x;
+	background-color: $menuBackColor;
+	border-bottom: 10px solid #0a0e0f;
 
+	header
+	{
+		height: 180px;
+		overflow: visible;
+		
+		.log 
+		{
+			float: left;
+		}
+
+		nav ul
+		{
+			list-style: none;
+			display: flex;
+			float: right;
+
+			a
+			{
+				text-decoration: none;
+				height: 95px;
+				line-height: 95px;
+				color: #7c8385;
+				padding: 40px 21px;
+				cursor: pointer;
+				font-size: 0.875em;
+				position: relative;
+				top: 18px;
+
+				&:hover
+				{
+					background-color: black;
+				};
+			}
+		}
+	}
+
+}
