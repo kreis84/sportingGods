@@ -1,5 +1,25 @@
 @import 'def';
 @import 'media';
+
+h1{	
+	font-size: 1.625em;
+	line-height: 40px;
+}
+body
+{
+	background: linear-gradient(#383a3a, black);
+}
+
+p
+{
+	font-size: 1em;
+}
+
+h5
+{
+	font-size: 1.125em;
+}
+
 .headerWrapper
 {
 	background-image: url('../img/menu1.png');
@@ -14,9 +34,9 @@
 		
 		.log 
 		{
-			float: left;
+			position: absolute;
+			z-index: 200;
 		}
-
 		nav ul
 		{
 			list-style: none;
@@ -43,4 +63,142 @@
 		}
 	}
 
+}
+
+.mainWrapper
+{
+	background-image:  url(../img/body.png);
+	background-repeat: repeat-x;
+	main
+	{
+		img 
+		{
+			position: relative;
+	    	top: -75px;
+	    	z-index: 10;
+	    	box-shadow: 0 0 5px black;
+		}
+		.buttonWrapper
+		{
+			display: flex;
+			justify-content: space-around;
+			color: $homeButtonFontColor;
+			
+			.bigButton
+			{
+				height: 150px;
+				width: 280px;
+				background: url('../img/bigButton.png');
+				text-align: center;
+				
+				h1
+				{
+					margin-top: 20px;
+				}
+			
+				button
+				{
+					background-color: #380c0c;
+					width: 130px;
+					height: 30px;
+					margin-top: 10px;
+					border: 0;
+					border-radius: 5px;
+					border-top: 1px solid #971010;
+					color: $homeButtonFontColor;
+				}
+			}
+		}
+	}
+}
+
+footer
+{
+	border-radius: 5px;
+	background-color: $footerColor;
+	color: #6d6d6d;
+	display: flex;
+	padding-bottom: 15px;
+	margin-top: 180px;
+
+	h4
+	{
+		margin-top: 10px;
+		color: #e5a704;
+		line-height: 40px;
+		margin-left: 30px;
+	}
+
+	.leftBox
+	{
+		width: 750px;
+		border-right: 3px solid black;
+
+		p 
+		{
+			margin-left: 30px;
+		}
+	}
+
+	.rightBox
+	{
+		width: 200px;
+
+		.socialWrapper
+		{
+			margin-left: 20px;
+		    width: 165px;
+		    display: flex;
+			justify-content: space-around;
+		}
+		
+		.social
+		{
+			width: 35px;
+			height: 25px;
+		}
+
+		.social:last-child
+		{
+			margin-left: 10px;
+		}
+
+		.facebook
+		{
+			background: url(../img/social.png) 0 0;
+		}
+
+		.twitter
+		{
+			background: url(../img/social.png) 70px 0;
+		}
+
+		.google
+		{
+			background: url(../img/social.png) 35px 0; 
+		}
+	}
+}
+
+.copyright
+{
+	font-size: 0.75em;
+	color: #535353;
+	text-align: center;
+	line-height: 100px;
+}
+
+.about
+{
+	color: $textColor;
+
+	p{
+		line-height: 28px;
+	}
+
+	h5
+	{
+		line-height: 34px;
+		padding-top: 40px;
+	}
 }

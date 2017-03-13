@@ -1,14 +1,19 @@
 $menuBackColor: #151e24;
+$homeButtonFontColor: #dec0c1;
+$footerColor: #151515;
+$textColor: #bababa;
 
 *{
 	margin:0 ;
 	padding: 0;
 	font-family: arial;
 }
+
 body
 {
 	font-size: 16px;
 }
+
 .width100
 {
 	width: 100%;
@@ -17,5 +22,6 @@ body
 .widthInitial
 {
 	width: 940px;
-	margin:auto;
+	margin-left: auto;
+	margin-right: auto;
 }
