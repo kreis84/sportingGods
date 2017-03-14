@@ -12,6 +12,7 @@
 	{
 		width: 75%;
 	}
+
 }
 
 @media screen and (max-width: 800px)
@@ -29,6 +30,10 @@
 	div.mainWrapper main img 
 	{
 		top:0;
+	}
+	div.headerWrapper header nav ul a
+	{
+		padding-bottom: 40px;
 	}
 }
 
@@ -106,5 +111,17 @@
 	.products .item
 	{
 		width: 100%;
+	}
+	.mainWrapper main .buttonWrapper div.bigButton
+	{
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+		img 
+		{
+			width: auto;
+			height: auto;
+		}
 	}
 }

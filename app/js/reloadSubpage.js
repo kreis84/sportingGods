@@ -17,7 +17,16 @@ var APP = (function()
 					elementToLoadTo.text(error.statusText);
 				});
 		});
-	}
+	};
+
+	function markSelected(item)
+	{
+		let menuItems = document.querySelectorAll('nav a');
+		menuItems.forEach((item)=>{
+			item.classList.remove('selectedMenu');
+		});
+		item.classList.add('selectedMenu');
+	};
 
 	return{
 		setMainElement: function(element)
@@ -32,6 +41,7 @@ var APP = (function()
 				$(this).on('click', function(event){ 
 					event.preventDefault();
 					getSubpages($(this).attr('href'));
+					markSelected(this);
 				});
 			});
 			$('.mainWrapper').on('click', '.buttonWrapper a', (event)=>
