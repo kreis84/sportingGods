@@ -84,10 +84,13 @@ h5
 		}
 		.buttonWrapper
 		{
+			position: relative;
 			display: flex;
 			justify-content: space-around;
 			color: $homeButtonFontColor;
-			
+			top: -118px;
+    		z-index: 20;
+
 			.bigButton
 			{
 				height: 150px;
@@ -110,6 +113,12 @@ h5
 					border-radius: 5px;
 					border-top: 1px solid #971010;
 					color: $homeButtonFontColor;
+				}
+
+				img 
+				{
+					top: 30px;
+					box-shadow: 0 0 0 ;
 				}
 			}
 		}
@@ -153,7 +162,7 @@ footer
 
 		.socialWrapper
 		{
-			margin-left: 20px;
+			padding-left: 20px;
 		    width: 165px;
 		    display: flex;
 			justify-content: space-around;

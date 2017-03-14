@@ -34,6 +34,11 @@ var APP = (function()
 					getSubpages($(this).attr('href'));
 				});
 			});
+			$('.mainWrapper').on('click', '.buttonWrapper a', (event)=>
+			{
+				event.preventDefault();
+				getSubpages('partials/products.html');
+			});
 		}
 	}
 
