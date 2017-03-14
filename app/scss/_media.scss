@@ -40,6 +40,11 @@
 	{
 		width: 100%;
 	}
+	.products .item
+	{
+		width: 50%;
+	}
+
 }
 
 @media screen and (max-width: 500px)
@@ -79,5 +84,9 @@
 				margin: 10px 0;
 			}
 		}
+	}
+	.products .item
+	{
+		width: 100%;
 	}
 }

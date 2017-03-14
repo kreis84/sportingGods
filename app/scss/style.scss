@@ -124,6 +124,7 @@ footer
 	display: flex;
 	/*padding-bottom: 15px;*/
 	margin-top: 180px;
+	clear: both;
 
 	h4
 	{
@@ -203,6 +204,8 @@ footer
 .about
 {
 	color: $textColor;
+	padding: 30px;
+	box-sizing: border-box;
 
 	h5
 	{
@@ -221,5 +224,18 @@ footer
 	li
 	{
 		line-height: 28px;
+	}
+}
+
+.products
+{
+	.item 
+	{
+		padding: 40px 20px;
+		p 
+		{
+			text-align: center;
+			color: $textColor;
+		}
 	}
 }
