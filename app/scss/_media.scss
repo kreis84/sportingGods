@@ -8,8 +8,27 @@
 	{
 		width: 100%;
 	}
+	footer .leftBox
+	{
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.log img
+	{
+		transform: scale(0.5);
+		position: relative;
+		top: -50px;
+		left: -120px;
+	}
 }
 
 @media screen and (max-width: 600px)
 {
+	.blog .leftBox
+	{
+		width: 100%;
+	}
 }

@@ -4,3 +4,4 @@ app/js/jquery-3.1.1.min.js
 app/css/
 node_modules/
 app/img/
+app/project*

@@ -13,11 +13,13 @@ body
 p
 {
 	font-size: 1em;
+	line-height: 28px;
 }
 
 h5
 {
 	font-size: 1.125em;
+	line-height: 34px;
 }
 
 .headerWrapper
@@ -42,6 +44,7 @@ h5
 			list-style: none;
 			display: flex;
 			float: right;
+			z-index: 300;
 
 			a
 			{
@@ -69,6 +72,7 @@ h5
 {
 	background-image:  url(../img/body.png);
 	background-repeat: repeat-x;
+/*	overflow: hidden; */
 	main
 	{
 		img 
@@ -118,7 +122,7 @@ footer
 	background-color: $footerColor;
 	color: #6d6d6d;
 	display: flex;
-	padding-bottom: 15px;
+	/*padding-bottom: 15px;*/
 	margin-top: 180px;
 
 	h4
@@ -133,6 +137,8 @@ footer
 	{
 		width: 750px;
 		border-right: 3px solid black;
+		padding-bottom: 20px;
+		padding-right: 20px;
 
 		p 
 		{
@@ -156,6 +162,12 @@ footer
 		{
 			width: 35px;
 			height: 25px;
+			cursor: pointer;
+
+			&:hover
+			{
+				filter: brightness(1.4);
+			}
 		}
 
 		.social:last-child
@@ -192,13 +204,22 @@ footer
 {
 	color: $textColor;
 
-	p{
-		line-height: 28px;
-	}
-
 	h5
 	{
-		line-height: 34px;
 		padding-top: 40px;
+	}
+}
+
+.blog
+{
+	color: $textColor;
+	.leftBox, .rightBox
+	{
+		box-sizing: border-box;
+		padding: 40px;
+	}
+	li
+	{
+		line-height: 28px;
 	}
 }
