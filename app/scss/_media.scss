@@ -16,12 +16,21 @@
 
 @media screen and (max-width: 800px)
 {
-	.log img
+	.log 
 	{
 		transform: scale(0.5);
-		position: relative;
 		top: -50px;
 		left: -120px;
+	}
+}
+
+@media screen and (max-width: 700px)
+{
+	.log 
+	{
+		transform: scale(0.3);
+		top: -67px;
+		left: -190px;
 	}
 }
 
@@ -30,5 +39,45 @@
 	.blog .leftBox
 	{
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px)
+{
+	.log
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px)
+{
+	.headerWrapper header nav ul
+	{
+		width: 100%;
+	/*	display: flex !important;*/
+		justify-content: space-around;
+		li a 
+		{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	footer
+	{
+		div.leftBox, div.rightBox
+		{
+			width: 50%;
+		}
+		.rightBox div.socialWrapper
+		{
+			width: 100%;
+			flex-direction: column;
+
+			.social
+			{
+				margin: 10px 0;
+			}
+		}
 	}
 }
